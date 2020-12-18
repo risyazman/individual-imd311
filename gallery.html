@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GALLERY</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Courier new; 
+  background-color: #B0C4DE;
+}
+
+/* Style the header */
+header {
+  background-color: #B0E0E6;
+  padding: 3px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color: #008080;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>HELLO GUYS, WELCOME TO MY WEBSITE</h2> 
+<p>WOW! A whole page just about me &#128512; If you're interest to know me, let's go and see my website.</p>
+
+<footer>
+      <a style=" color: black" href="homepage.html"> Home</a>     <a style=" color: black" href="aboutme.html">About Me</a>     <a style=" color: black" href="experience.html">Experience</a>     <a style=" color: black"  href="education.html">Education</a>     <a style=" color: black" href="family.html">Family</a>     <a style=" color: black" href="gallery.html">Gallery</a>    <a style=" color: black"  href="dreams.html">Dreams</a>
+
+<header>
+  <h1 style="font-style: italic; font-family: lucida handwriting"> Bits' Bout Me &#128120;</h1>
+
+
+<p>This is my lovely friends</p>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1/10</div>
+  <img src="images/risya22.jpg" style="width:25%">
+  <div class="text">Chingu</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="images/risya23.jpg" style="width:25%">
+  <div class="text">The Girls</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="images/risya24.jpeg" style="width:25%">
+  <div class="text">My Friends</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="images/risya25.jpeg" style="width:25%">
+  <div class="text">My Second Family</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="images/risya26.jpeg" style="width:25%">
+  <div class="text">A day with Nisaaa</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="images/risya27.jpeg" style="width:25%">
+  <div class="text"> &#128151; </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="images/risya28.jpeg" style="width:25%">
+  <div class="text">Wedding Day at Wani's House</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="images/risya29.jpeg" style="width:25%">
+  <div class="text">The Kids</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="images/risya30.jpeg" style="width:25%">
+  <div class="text">Special Day</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="images/risya31.jpeg" style="width:25%">
+  <div class="text">Corporate Day</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+ <h2 style="font-style:italic; font-family: courier new"  > "Use your precious moments to live life fully every single second of every single day. &#128151; "</h2>
+  
+</header>
+
+
+
+
+</html>
